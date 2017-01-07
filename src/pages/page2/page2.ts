@@ -1,19 +1,18 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
-import { Page2 } from '../page2/page2'
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page2',
+  templateUrl: 'page2.html'
 })
-export class HomePage {
+export class Page2 {
 
   constructor(public navCtrl: NavController) {
     
   }
 
-  goToPage2() {
-    this.navCtrl.push(Page2);
+  goToPage1() {
+    this.navCtrl.pop();
   }
 }
